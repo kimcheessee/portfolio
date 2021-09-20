@@ -1,0 +1,35 @@
+* {
+    background-color: black;
+    color: white;
+    height: 100%;
+}
+
+
+
+ul {
+    list-style-type: none;
+}
+
+.parallax {
+    /* image */
+    background-image: url();
+
+    /* set a specific height */
+    height: 100%;
+
+    /* creating the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-position: no-repeat;
+    background-size: cover;
+
+}
+
+/* This turns off parallax scrolling for all tablets and phones. increases and decreases the pixels if needed */
+@media only screen and (max-device-widthL 1366px) {
+    .parallax {
+        background-attachment: scroll;
+    }
+}
+
+
